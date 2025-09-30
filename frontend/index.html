@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIM Navigator</title>
+  </head>
+  <body class="bg-gray-100">
+    <div id="preloader">
+      <div class="loader-box">
+        <span>A</span>
+        <span>I</span>
+        <span>M</span>
+      </div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+
+  <style>
+    /* Preloader Fullscreen */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #f9fafb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    /* Loader container with gradient + shadow + rounded */
+    .loader-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 35px;
+      border-radius: 50px;
+      background: linear-gradient(90deg, #3b82f6, #9333ea); /* blue → purple */
+      color: white;
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: 6px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      border: 3px solid white;
+      outline: 3px solid rgba(59, 130, 246, 0.5);
+      outline-offset: 5px;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    /* Text style */
+    .loader-box span {
+      margin: 0 5px;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    /* Whole badge floating animation */
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) scale(1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      }
+      50% {
+        transform: translateY(-12px) scale(1.05);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+      }
+    }
+  </style>
+</html>
