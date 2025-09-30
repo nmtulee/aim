@@ -1,0 +1,16 @@
+export const BASE_URL = "";
+export const USERS_URL = "/api/users";
+export const CATEGORIES_URL = "/api/categories";
+export const BLOGS_URL = "/api/blogs";
+export const IMG_URL = '/api/upload';
+export const RESUMES_URL = '/api/resume';
+export const FILE_URL = '/api/files';
+export const PHOTOS_URL = '/api/photo';
+export const MESSAGES_URL = '/api/message';
+export const JOBS_URL = '/api/job';
+export const TESTIMONIALS_URL = '/api/testimonial';
+export const JOB_APLICACION_URL = '/api/jobAplicacion';
+export const TEAM_URL = '/api/team';
+export const STUDY_WORK_URL = '/api/Study-Work';
+export const LANGUAGE_COURSE_URL = '/api/language';
+export const ENROLL = '/api/enroll';
